@@ -27,7 +27,7 @@ const AppLayout = ({ children }: Readonly<PropsWithChildren>) => {
       <ClerkProvider
         appearance={{
           layout: {
-            logoImageUrl: "/icons/Meetupin.png",
+            logoImageUrl: "/icons/MeetupIn.png",
             socialButtonsVariant: "iconButton",
           },
           variables: {
