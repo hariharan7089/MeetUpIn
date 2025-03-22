@@ -26,7 +26,7 @@ const config = {
           4: "#1E2757",
         },
         blue: {
-          1: "#0E78F9",
+          1: "#3DA277",
         },
         sky: {
           1: "#C9DDFF",

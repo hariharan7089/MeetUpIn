@@ -27,12 +27,12 @@ const AppLayout = ({ children }: Readonly<PropsWithChildren>) => {
       <ClerkProvider
         appearance={{
           layout: {
-            logoImageUrl: "/icons/yoom-logo.svg",
+            logoImageUrl: "/icons/Meetupin.png",
             socialButtonsVariant: "iconButton",
           },
           variables: {
             colorText: "#FFF",
-            colorPrimary: "#0E78F9",
+            colorPrimary: "#0E78FE",
             colorBackground: "#1C1F2E",
             colorInputBackground: "#252A41",
             colorInputText: "#FFF",

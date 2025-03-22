@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "Yoom",
+  title: "MeetUpIn",
   description: "Modern Next.js powered Video calling app",
   keywords: [
     "reactjs",
@@ -15,7 +15,7 @@ export const siteConfig: Metadata = {
     "radix-ui",
     "cn",
     "clsx",
-    "zoom-clone",
+    "MeetUpIn",
     "realtime-video",
     "realtime-chat",
     "live-audio",
@@ -39,11 +39,11 @@ export const siteConfig: Metadata = {
     "css",
   ] as Array<string>,
   authors: {
-    name: "Sanidhya Kumar Verma",
-    url: "https://github.com/sanidhyy",
+    name: "Hariharan K",
+    url: "https://github.com/hariharan7089",
   },
 } as const;
 
 export const links = {
-  sourceCode: "https://github.com/sanidhyy/zoom-clone",
+  sourceCode: "https://github.com/hariharan7089/MeetUpIn",
 } as const;
