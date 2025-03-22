@@ -11,8 +11,8 @@ export const Navbar = () => {
     <nav className="flex-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
       <Link href="/" className="flex items-center gap-1">
         <Image
-          src="/icons/MeetUpIn.png"
-          alt="MeetUpIn"
+          src="/icons/logo.svg"
+          alt="Yoom logo"
           width={32}
           height={32}
           className="max-sm:size-10"

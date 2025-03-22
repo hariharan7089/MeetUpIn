@@ -1,5 +1,5 @@
 {
-  "name": "MeetUpIn",
+  "name": "zoom-clone",
   "version": "1.0.1",
   "private": true,
   "scripts": {
@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "author": {
-    "name": "Hariharan k",
-    "email": "hariharank007089@gmail.com",
-    "url": "https://github.com/hariharan7089"
+    "name": "Sanidhya Kumar Verma",
+    "email": "sanidhya.verma12345@gmail.com",
+    "url": "https://github.com/sanidhyy"
   },
   "description": "Modern Next.js powered Video calling app",
   "keywords": [
@@ -52,14 +52,23 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hariharan7089/MeetUpIn.git"
+    "url": "https://github.com/sanidhyy/zoom-clone.git"
   },
-  "homepage": "https://github.com/hariharan7089/MeetUpIn#readme",
+  "homepage": "https://github.com/sanidhyy/zoom-clone#readme",
   "bugs": {
-    "url": "https://github.com/hariharan7089/MeetUpIn/issues",
-    "email": "hariharank007089@gmail.com"
+    "url": "https://github.com/sanidhyy/zoom-clone/issues",
+    "email": "sanidhya.verma12345@gmail.com"
   },
-
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/sanidhy"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://www.buymeacoffee.com/sanidhy"
+    }
+  ],
   "dependencies": {
     "@clerk/nextjs": "^5.6.4",
     "@radix-ui/react-dialog": "^1.1.6",
