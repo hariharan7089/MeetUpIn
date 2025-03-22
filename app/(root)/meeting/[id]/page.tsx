@@ -3,23 +3,27 @@
 import { useUser } from "@clerk/nextjs";
 import { StreamCall, StreamTheme } from "@stream-io/video-react-sdk";
 import { useState } from "react";
+import { useParams } from "next/navigation"; // ✅ Correct way to access dynamic route params
 
 import { Loader } from "@/components/loader";
 import { MeetingRoom } from "@/components/meeting-room";
 import { MeetingSetup } from "@/components/meeting-setup";
 import { useGetCallById } from "@/hooks/use-get-call-by-id";
 
-type MeetingIdPageProps = {
-  params: {
-    id: string;
-  };
-};
-
-const MeetingIdPage = ({ params }: MeetingIdPageProps) => {
+const MeetingIdPage = () => {
   const [isSetupComplete, setIsSetupComplete] = useState(false);
   const { user, isLoaded } = useUser();
+  
+  // ✅ Use useParams to get the meeting ID from the URL
+  const { id } = useParams<{ id: string }>();
 
-  const { call, isCallLoading } = useGetCallById(params.id);
+  // ✅ Ensure the hook always runs
+  const { call, isCallLoading } = useGetCallById(id || "default-id");
+
+  // ✅ Handle missing ID after hook execution
+  if (!id) {
+    return <div>Error: Meeting ID is missing.</div>;
+  }
 
   if (!isLoaded || isCallLoading) return <Loader />;
 
