@@ -59,6 +59,9 @@
     "url": "https://github.com/hariharan7089/MeetUpIn/issues",
     "email": "hariharank007089@gmail.com"
   },
+  "eslintConfig": {
+  "extends": "next/core-web-vitals"
+},
  
   "dependencies": {
     "@clerk/nextjs": "^5.6.4",
