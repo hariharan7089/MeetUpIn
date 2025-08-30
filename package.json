@@ -83,7 +83,7 @@
     "next": "^15.2.3",
     "react": "^18",
     "react-datepicker": "^7.5.0",
-    "react-dom": "^18",
+    "react-dom": "^19",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -91,7 +91,7 @@
     "@types/node": "^22",
     "@types/react": "^19.0.12",
     "@types/react-datepicker": "^7.0.0",
-    "@types/react-dom": "^19.0.4",
+    "@types/react-dom": "^19.1.7",
     "eslint": "^9",
     "eslint-config-next": "15.0.3",
     "eslint-plugin-unused-imports": "^4.1.4",
