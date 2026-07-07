@@ -23,28 +23,29 @@ export const metadata: Metadata = siteConfig;
 
 const AppLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
-    <html lang="en">
-      <ClerkProvider
-        appearance={{
-          layout: {
-            logoImageUrl: "/icons/MeetupIn.png",
-            socialButtonsVariant: "iconButton",
-          },
-          variables: {
-            colorText: "#FFF",
-            colorPrimary: "#0E78FE",
-            colorBackground: "#1C1F2E",
-            colorInputBackground: "#252A41",
-            colorInputText: "#FFF",
-          },
-        }}
-      >
+    <ClerkProvider
+      afterSignOutUrl="/sign-in"
+      appearance={{
+        layout: {
+          logoImageUrl: "/icons/MeetupIn.png",
+          socialButtonsVariant: "iconButton",
+        },
+        variables: {
+          colorText: "#FFF",
+          colorPrimary: "#0E78FE",
+          colorBackground: "#1C1F2E",
+          colorInputBackground: "#252A41",
+          colorInputText: "#FFF",
+        },
+      }}
+    >
+      <html lang="en">
         <body className={cn("bg-dark-2", inter.className)}>
           {children}
           <Toaster />
         </body>
-      </ClerkProvider>
-    </html>
+      </html>
+    </ClerkProvider>
   );
 };
 
